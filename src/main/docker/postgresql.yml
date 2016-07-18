@@ -1,0 +1,12 @@
+version: '2'
+services:
+    seahorsegateway-postgresql:
+        container_name: seahorsegateway-postgresql
+        image: postgres:9.5.2
+        # volumes:
+        #     - ~/volumes/jhipster/seahorsegateway/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=seahorsegateway
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
